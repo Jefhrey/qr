@@ -1,0 +1,46 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background-color: hsl(212, 45%, 89%);
+  font-family: 'Outfit', system-ui, sans-serif;
+}
+
+/* Center page vertically and horizontally */
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* centers vertically */
+  align-items: center;     /* centers horizontally */
+  gap: 1.5rem;             /* space between card and attribution */
+  padding: 2rem;
+}
+
+.card {
+  padding: 1.5rem;
+  background-color: white;
+  border-radius: 15px;
+  width: min(360px, 90vw); /* responsive width */
+  box-shadow: 0 10px 20px rgba(0,0,0,0.06);
+  text-align: center;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 1rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: hsl(228, 12%, 20%);
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
