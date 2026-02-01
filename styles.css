@@ -1,46 +1,48 @@
-html, body {
-  height: 100%;
+body
+{
+  background-color: hsl(212, 45%, 89%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
   margin: 0;
 }
 
-body {
-  background-color: hsl(212, 45%, 89%);
-  font-family: 'Outfit', system-ui, sans-serif;
-}
+.attribution 
+{
+  font-size: 11px; text-align: center;
+  /* margin-top: auto; */
+  position: fixed;
+  bottom: 2px;
+  }
+.attribution a { color: hsl(228, 45%, 44%); }
 
-/* Center page vertically and horizontally */
-.page {
-  min-height: 100vh;
+.box
+{
+  border-radius: 4%;
+  background-color: white;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* centers vertically */
-  align-items: center;     /* centers horizontally */
-  gap: 1.5rem;             /* space between card and attribution */
-  padding: 2rem;
+  width: 25vw;
+  padding: 1em;
+  padding-bottom: 2em;
+  /* height: 60vw; */
 }
 
-.card {
-  padding: 1.5rem;
-  background-color: white;
-  border-radius: 15px;
-  width: min(360px, 90vw); /* responsive width */
-  box-shadow: 0 10px 20px rgba(0,0,0,0.06);
-  text-align: center;
-}
-
-.card img {
-  max-width: 100%;
-  height: auto;
+.qr
+{
   display: block;
-  margin: 0 auto 1rem;
+  width: 100%;
+  height: 100%; 
+  border-radius: 4%;
+  /* margin: 1em; */
+  object-fit: cover;   
+  /* margin-top: 10px; */
 }
 
-.attribution {
-  font-size: 11px;
+p
+{
   text-align: center;
-  color: hsl(228, 12%, 20%);
-}
-
-.attribution a {
-  color: hsl(228, 45%, 44%);
+  margin-bottom: 0px;
 }
